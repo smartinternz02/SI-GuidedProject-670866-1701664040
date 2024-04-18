@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> </title>
+    </head>
+ <style>
+    body{
+        background-color:#15F5BA;
+    }
+ </style>
+    <body>
+        <h6>
+<center>
+<form action="/predict" method="post">
+<h1>Finding the Cluster</h1>
+<br>
+<h2>Please Enter your  BMI & Charges</h2>
+<label for="BMI" >BMI:</label><br>
+<input type="text" id="BMI" name="BMI" placeholder="BMI" required="required"/><br><br>
+<label for="Charges">Charges:</label><br>
+<input type="text" id="Charges" name="Charges" placeholder="Charges" required="required"/><br><br>
+<input type="submit" value="Submit">
+</form>
+<br>
+</center>
+</h6>
+    <div>{{ prediction_text }}</div>
+    </body>
+</html>
